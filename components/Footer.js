@@ -1,4 +1,4 @@
-import { Button, Box, Flex, Link } from '@chakra-ui/core'
+import { Box, Flex, Link } from '@chakra-ui/core'
 import NextLink from 'next/link'
 
 const Footer = ({ children }) => {
