@@ -1,4 +1,5 @@
 import { useColorMode, Heading, Flex, Stack, Text, Button } from '@chakra-ui/core'
+import Contact from '../components/Contact'
 import Container from '../components/Container'
 import Socials from '../components/Socials'
 import TeamTeaser from '../components/TeamTeaser'
@@ -40,6 +41,7 @@ const Home = () => {
         </Flex>
         <TeamTeaser />
         <Socials />
+        <Contact />
       </Stack>
     </Container>
   )

@@ -1,4 +1,4 @@
-const { Flex, Link, Icon } = require('@chakra-ui/core')
+import { Flex, Link, Icon } from '@chakra-ui/core'
 
 const Socials = () => {
   return (
