@@ -1,5 +1,6 @@
 import { useColorMode, Heading, Flex, Stack, Text, Button } from '@chakra-ui/core'
 import Container from '../components/Container'
+import Socials from '../components/Socials'
 import TeamTeaser from '../components/TeamTeaser'
 import Teaser from '../components/Teaser'
 
@@ -38,6 +39,7 @@ const Home = () => {
           <Teaser title='WIR LIEBEN DAS LEBEN' description='Events | Austausch | Netzwerk' src='https://images.unsplash.com/photo-1478812954026-9c750f0e89fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80' alt='group-of-people' />
         </Flex>
         <TeamTeaser />
+        <Socials />
       </Stack>
     </Container>
   )
