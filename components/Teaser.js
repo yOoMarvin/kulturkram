@@ -8,10 +8,10 @@ const Teaser = (props) => {
         {props.title}
       </Heading>
       <Text>
-        ARTELIER | AUSTELLUNGEN | LESUNGEN
+        {props.description}
       </Text>
       <Box w='100%' mb={4} mt={4}>
-        <Image src='https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1415&q=80' alt='art-gallery' />
+        <Image src={props.src} alt={props.alt} />
       </Box>
       <NextLink href='/' passHref>
         <Link as='a' color='pink.600'>Mehr erfahren</Link>
