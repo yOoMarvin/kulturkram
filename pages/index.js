@@ -30,7 +30,7 @@ const Home = () => {
         >
           <Heading fontWeight='bold' size='2xl'>WENN FISCHE FLIEGEN KÖNNTEN...</Heading>
           <Text color={secondaryTextColor[colorMode]} fontSize='xl'>
-            Warum eigentlich nicht. Wir bieten einen Raum Lorem ipsum dolor sit amet, consectetuer adipiscing elit Aenean comm.
+            Warum eigentlich nicht? Wir bieten einen Raum Lorem ipsum dolor sit amet, consectetuer adipiscing elit Aenean comm.
           </Text>
           <Button mt={8} mb={8} variantColor='pink' variant='outline'>MEHR ÜBER DEN VEREIN ERFAHREN</Button>
         </Flex>
