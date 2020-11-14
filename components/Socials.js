@@ -2,7 +2,7 @@ import { Flex, Link, Icon } from '@chakra-ui/core'
 
 const Socials = () => {
   return (
-    <Flex flexDirection='row' alignItems='center' justify='space-around' width='100%' pt={16} pb={16}>
+    <Flex flexDirection='row' alignItems='center' justify='space-around' width='100%' pt={16} pb={16} mb={8}>
       <Link
         href='https://www.facebook.com'
         title='Facebook'
