@@ -1,4 +1,4 @@
-import { useColorMode, Heading, Flex, Stack, Text, Button } from '@chakra-ui/core'
+import { Heading, Flex, Stack, Text, Button } from '@chakra-ui/core'
 import styled from '@emotion/styled'
 import Contact from '../components/Contact'
 import Container from '../components/Container'
@@ -12,7 +12,7 @@ z-index: 1;
   content:"";
   background-color: #ffdb1a;
   position: absolute;
-  height: 60%;
+  height: 65%;
   width: 200vw;
   left: -100vw;
   top: 0;
@@ -21,12 +21,6 @@ z-index: 1;
 `
 
 const Home = () => {
-  const { colorMode } = useColorMode()
-  const secondaryTextColor = {
-    light: 'gray.700',
-    dark: 'gray.400'
-  }
-
   return (
     <Container>
       <Stack
@@ -47,7 +41,7 @@ const Home = () => {
           <Text color='black' fontSize='xl'>
             Warum eigentlich nicht? Wir bieten einen Raum Lorem ipsum dolor sit amet, consectetuer adipiscing elit Aenean comm.
           </Text>
-          <Button mt={8} mb={8} variantColor='accent' variant='outline'>MEHR ÜBER DEN VEREIN ERFAHREN</Button>
+          <Button mt={8} mb={[8, 20]} variantColor='accent' variant='outline'>MEHR ÜBER DEN VEREIN ERFAHREN</Button>
         </ColoredFlex>
         <Flex flexDirection='column' justifyContent='flex-start' alignItems='flex-start' maxWidth='700px'>
           <Teaser title='WIR LIEBEN KUNST' description='Artelier | Austellungen | Lesungen' src='https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1415&q=80' alt='art-gallery' align='left' />
