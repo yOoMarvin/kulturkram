@@ -2,6 +2,33 @@ import { theme as chakraTheme } from '@chakra-ui/core'
 
 const theme = {
   ...chakraTheme,
+  colors: {
+    ...chakraTheme.colors,
+    accent: {
+      50: '#ffe5fc',
+      100: '#fcb7e9',
+      200: '#f68ad8',
+      300: '#f05bc7',
+      400: '#eb2eb7',
+      500: '#d1149e',
+      600: '#a40d7b',
+      700: '#750659',
+      800: '#490236',
+      900: '#1c0016'
+    },
+    primary: {
+      50: '#fffbda',
+      100: '#fff3ad',
+      200: '#ffeb7d',
+      300: '#ffe34b',
+      400: '#ffdb1a',
+      500: '#e6c200',
+      600: '#b39700',
+      700: '#806c00',
+      800: '#4d4100',
+      900: '#1c1600'
+    }
+  },
   fonts: {
     ...chakraTheme.fonts,
     body: 'Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"'
