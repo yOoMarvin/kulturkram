@@ -28,8 +28,9 @@ const Container = ({ children }) => {
         px={8}
       >
         {children}
-        <Footer />
+
       </Flex>
+      <Footer />
     </>
   )
 }
