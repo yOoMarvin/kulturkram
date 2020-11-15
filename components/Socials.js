@@ -1,8 +1,8 @@
-import { Flex, Link, Icon } from '@chakra-ui/core'
+import { Stack, Link, Icon } from '@chakra-ui/core'
 
 const Socials = () => {
   return (
-    <Flex flexDirection='row' alignItems='center' justify='space-around' width='100%' pt={16} pb={16} mb={8}>
+    <Stack isInline alignItems='center' justifyContent='center' spacing={16} width='100%' pt={16} pb={16} mb={8}>
       <Link
         href='https://www.facebook.com'
         title='Facebook'
@@ -42,7 +42,7 @@ const Socials = () => {
           variant='ghost'
         />
       </Link>
-    </Flex>
+    </Stack>
   )
 }
 
