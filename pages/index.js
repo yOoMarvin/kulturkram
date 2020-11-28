@@ -6,6 +6,8 @@ import Socials from '../components/Socials'
 import TeamTeaser from '../components/TeamTeaser'
 import Teaser from '../components/Teaser'
 
+import { client } from '../lib/prismic-configuration'
+
 const Hero = styled(Box)`
   align-items: center;
   display: flex;
@@ -20,7 +22,7 @@ const Hero = styled(Box)`
 
 `
 
-const Home = () => {
+export default function Home ({ home }) {
   return (
     <>
       <Hero>
@@ -183,9 +185,9 @@ const Home = () => {
               maxW='700px'
               mt={16}
             >
-              <Heading color='black' fontWeight='bold' size='2xl' zIndex='1'>WENN FISCHE FLIEGEN KÖNNTEN...</Heading>
+              <Heading color='black' fontWeight='bold' size='2xl' zIndex='1'>{home.data.hero}</Heading>
               <Text color='black' fontSize='xl'>
-                Warum eigentlich nicht? Wir bieten einen Raum Lorem ipsum dolor sit amet, consectetuer adipiscing elit Aenean comm.
+                {home.data.hero_description}
               </Text>
               <Button mt={8} mb={[8, 32]} variantColor='accent' variant='outline'>MEHR ÜBER DEN VEREIN ERFAHREN</Button>
             </Flex>
@@ -211,4 +213,11 @@ const Home = () => {
   )
 }
 
-export default Home
+export async function getStaticProps () {
+  const home = await client.getSingle('homepage')
+  return {
+    props: {
+      home
+    }
+  }
+}
