@@ -7,6 +7,7 @@ import TeamTeaser from '../components/TeamTeaser'
 import Teaser from '../components/Teaser'
 
 import { client } from '../lib/prismic-configuration'
+import Prismic from 'prismic-javascript'
 
 const Hero = styled(Box)`
   align-items: center;
@@ -22,7 +23,7 @@ const Hero = styled(Box)`
 
 `
 
-export default function Home ({ home }) {
+export default function Home ({ home, teasers }) {
   return (
     <>
       <Hero>
@@ -193,15 +194,16 @@ export default function Home ({ home }) {
             </Flex>
           </Flex>
 
+          {console.log(teasers)}
           <Flex flexDirection='column' maxW='1000px' w='100%'>
             <Flex flexDirection='column' alignItems='flex-start'>
-              <Teaser title='WIR LIEBEN KUNST' description='Artelier | Austellungen | Lesungen' src='https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1415&q=80' alt='art-gallery' align='left' />
+              <Teaser title={teasers.results[0].data.title} description={teasers.results[0].data.description} src={teasers.results[0].data.image_url.url} alt='art-gallery' align='left' />
             </Flex>
             <Flex flexDirection='column' alignItems='flex-end'>
-              <Teaser title='WIR LIEBEN MUSIK' description='Konzerte | Musikstudio | Produktion' src='https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80' alt='concert' align='right' />
+              <Teaser title={teasers.results[1].data.title} description={teasers.results[1].data.description} src={teasers.results[1].data.image_url.url} alt='concert' align='right' />
             </Flex>
             <Flex flexDirection='column' alignItems='flex-start'>
-              <Teaser title='WIR LIEBEN DAS LEBEN' description='Events | Austausch | Netzwerk' src='https://images.unsplash.com/photo-1478812954026-9c750f0e89fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80' alt='group-of-people' align='left' />
+              <Teaser title={teasers.results[2].data.title} description={teasers.results[2].data.description} src={teasers.results[2].data.image_url.url} alt='group-of-people' align='left' />
             </Flex>
           </Flex>
           <TeamTeaser />
@@ -215,9 +217,12 @@ export default function Home ({ home }) {
 
 export async function getStaticProps () {
   const home = await client.getSingle('homepage')
+  const teasers = await client.query(
+    Prismic.Predicates.at('document.type', 'teaser'))
   return {
     props: {
-      home
+      home,
+      teasers
     }
   }
 }
