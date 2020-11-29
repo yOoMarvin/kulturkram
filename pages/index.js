@@ -22,7 +22,7 @@ const Hero = styled(Box)`
 
 `
 
-export default function Home ({ home, teasers }) {
+export default function Home({ home, teasers }) {
   return (
     <>
       <Hero>
@@ -72,7 +72,7 @@ export default function Home ({ home, teasers }) {
   )
 }
 
-export async function getStaticProps (context) {
+export async function getStaticProps(context) {
   const home = await client.getSingle('homepage')
   const teasers = await client.query(
     Prismic.Predicates.at('document.type', 'teaser'),
