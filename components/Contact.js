@@ -1,4 +1,4 @@
-import { Flex, Heading, Link, Icon, Text } from '@chakra-ui/core'
+import { Flex, Heading, Link, Image, Text } from '@chakra-ui/core'
 
 const Contact = () => {
   return (
@@ -9,14 +9,11 @@ const Contact = () => {
         title='Email'
         isExternal
       >
-        <Icon
-          aria-label='Email'
-          name='email'
+        <Image
+          aria-label='Mail'
+          src='/mail.svg'
           size='48px'
-          color='black'
-          variant='ghost'
-          mb={4}
-          mt={4}
+          my={4}
         />
       </Link>
       <Link href='mailto:hello@kulturkram-mannheim.de' title='Email' isExternal>

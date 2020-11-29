@@ -1,4 +1,4 @@
-import { Stack, Link, Icon } from '@chakra-ui/core'
+import { Stack, Link, Image } from '@chakra-ui/core'
 
 const Socials = () => {
   return (
@@ -8,12 +8,10 @@ const Socials = () => {
         title='Facebook'
         isExternal
       >
-        <Icon
+        <Image
           aria-label='Facebook'
-          name='facebook'
+          src='/facebook.svg'
           size='48px'
-          color='black'
-          variant='ghost'
         />
       </Link>
       <Link
@@ -21,12 +19,10 @@ const Socials = () => {
         title='Instagram'
         isExternal
       >
-        <Icon
+        <Image
           aria-label='Instagram'
-          name='instagram'
+          src='/instagram.svg'
           size='48px'
-          color='black'
-          variant='ghost'
         />
       </Link>
       <Link
@@ -34,12 +30,10 @@ const Socials = () => {
         title='YouTube'
         isExternal
       >
-        <Icon
-          aria-label='YouTube'
-          name='youtube'
+        <Image
+          aria-label='Youtube'
+          src='/youtube.svg'
           size='48px'
-          color='black'
-          variant='ghost'
         />
       </Link>
     </Stack>

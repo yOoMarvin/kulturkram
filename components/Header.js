@@ -1,6 +1,6 @@
 import React from 'react'
 import NextLink from 'next/link'
-import { Button, Flex, Box, Heading } from '@chakra-ui/core'
+import { Button, Flex, Box, Image } from '@chakra-ui/core'
 import styled from '@emotion/styled'
 
 const FixedNav = styled(Flex)`
@@ -28,7 +28,11 @@ const Header = ({ children }) => {
       >
         <Box>
           <NextLink href='/' passHref>
-            <Heading as='a' size='lg' letterSpacing='tight' color='accent.400'>KULTUR<br />KRAM E.V</Heading>
+            <Image
+              aria-label='Logo'
+              src='/logo.svg'
+              size='160px'
+            />
           </NextLink>
         </Box>
         <Box>
