@@ -1,4 +1,4 @@
-import { Heading, Flex, Stack, Text, Button, Box } from '@chakra-ui/core'
+import { Heading, Flex, Stack, Text, Button, Box, Image } from '@chakra-ui/core'
 import styled from '@emotion/styled'
 import Contact from '../components/Contact'
 import Container from '../components/Container'
@@ -17,7 +17,6 @@ const Hero = styled(Box)`
   overflow: hidden;
   pointer-events: none;
   position: absolute;
-  top: -55em;
   width: 100%;
   z-index: 0;
 
@@ -26,7 +25,9 @@ const Hero = styled(Box)`
 export default function Home ({ home, teasers }) {
   return (
     <>
-      <Hero />
+      <Hero>
+        <Image src='/hero.svg' />
+      </Hero>
       <Container>
 
         <Stack

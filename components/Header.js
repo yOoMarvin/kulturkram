@@ -32,23 +32,24 @@ const Header = ({ children }) => {
               aria-label='Logo'
               src='/logo.svg'
               size='160px'
+              cursor='pointer'
             />
           </NextLink>
         </Box>
-        <Box>
+        <Box fontFamily='mono'>
           <NextLink href='/verein' passHref>
             <Button as='a' variant='ghost' p={[1, 4]}>
-              Verein
+              VEREIN
             </Button>
           </NextLink>
           <NextLink href='/events' passHref>
             <Button as='a' variant='ghost' p={[1, 4]}>
-              Events
+              EVENTS
             </Button>
           </NextLink>
           <NextLink href='/kontakt' passHref>
             <Button as='a' variant='ghost' p={[1, 4]}>
-              Kontakt
+              KONTAKT
             </Button>
           </NextLink>
         </Box>
