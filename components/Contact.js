@@ -20,7 +20,7 @@ const Contact = () => {
         />
       </Link>
       <Link href='mailto:hello@kulturkram-mannheim.de' title='Email' isExternal>
-        <Text as='a' fontFamily='mono' fontSize='2xl'>hello@kulturkram-mannheim.de</Text>
+        <Text fontFamily='mono' fontSize='2xl'>hello@kulturkram-mannheim.de</Text>
       </Link>
     </Flex>
   )
