@@ -218,7 +218,9 @@ export default function Home ({ home, teasers }) {
 export async function getStaticProps () {
   const home = await client.getSingle('homepage')
   const teasers = await client.query(
-    Prismic.Predicates.at('document.type', 'teaser'))
+    Prismic.Predicates.at('document.type', 'teaser'),
+    { orderings: '[my.teaser.id]' }
+  )
   return {
     props: {
       home,
