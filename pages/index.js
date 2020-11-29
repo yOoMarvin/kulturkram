@@ -42,7 +42,7 @@ export default function Home ({ home, teasers }) {
               flexDirection='column'
               alignItems='flex-start'
               maxW='700px'
-              mt={[4, 16]}
+              mt={[4, 16, 32]}
             >
               <Heading color='black' fontWeight='900' fontSize={['4xl', '5xl', '7xl']} zIndex='1'>{home.data.hero}</Heading>
               <Text color='black' fontSize='xl'>
