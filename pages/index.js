@@ -194,7 +194,6 @@ export default function Home ({ home, teasers }) {
             </Flex>
           </Flex>
 
-          {console.log(teasers)}
           <Flex flexDirection='column' maxW='1000px' w='100%'>
             <Flex flexDirection='column' alignItems='flex-start'>
               <Teaser title={teasers.results[0].data.title} description={teasers.results[0].data.description} src={teasers.results[0].data.image_url.url} alt='art-gallery' align='left' />
