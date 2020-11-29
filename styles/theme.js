@@ -31,12 +31,27 @@ const theme = {
   },
   fonts: {
     ...chakraTheme.fonts,
-    body: 'Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"'
+    body: 'Open Sans, sans-serif',
+    heading: 'Kanit, sans-serif',
+    mono: 'Space Mono, monospace'
   },
   fontWeights: {
     normal: 400,
     medium: 700,
     bold: 900
+  },
+  fontSizes: {
+    xs: '12px',
+    sm: '14px',
+    md: '16px',
+    lg: '18px',
+    xl: '20px',
+    '2xl': '24px',
+    '3xl': '28px',
+    '4xl': '36px',
+    '5xl': '48px',
+    '6xl': '64px',
+    '7xl': '72px'
   },
   icons: {
     ...chakraTheme.icons,

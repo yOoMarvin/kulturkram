@@ -3,7 +3,7 @@ import { Flex, Heading, Link, Icon, Text } from '@chakra-ui/core'
 const Contact = () => {
   return (
     <Flex flexDirection='column' alignItems='center' justifyContent='space-around' width='100vw' bg='primary.400' py={8}>
-      <Heading>KONTAKT</Heading>
+      <Heading fontSize='7xl'>KONTAKT</Heading>
       <Link
         href='mailto:hello@kulturkram-mannheim.de'
         title='Email'
@@ -20,7 +20,7 @@ const Contact = () => {
         />
       </Link>
       <Link href='mailto:hello@kulturkram-mannheim.de' title='Email' isExternal>
-        <Text as='a'>hello@kulturkram-mannheim.de</Text>
+        <Text as='a' fontFamily='mono' fontSize='2xl'>hello@kulturkram-mannheim.de</Text>
       </Link>
     </Flex>
   )

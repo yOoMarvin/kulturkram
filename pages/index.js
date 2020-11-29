@@ -186,11 +186,11 @@ export default function Home ({ home, teasers }) {
               maxW='700px'
               mt={16}
             >
-              <Heading color='black' fontWeight='bold' size='2xl' zIndex='1'>{home.data.hero}</Heading>
+              <Heading color='black' fontWeight='900' fontSize='7xl' zIndex='1'>{home.data.hero}</Heading>
               <Text color='black' fontSize='xl'>
                 {home.data.hero_description}
               </Text>
-              <Button mt={8} mb={[8, 32]} variantColor='accent' variant='outline'>MEHR ÜBER DEN VEREIN ERFAHREN</Button>
+              <Button style={{ borderRadius: '0', border: '2px solid' }} mt={8} mb={[8, 32]} variantColor='accent' variant='outline' fontWeight='medium'>{home.data.button_text}</Button>
             </Flex>
           </Flex>
 

@@ -8,14 +8,14 @@ const TeamTeaser = (props) => {
         <Image src='https://images.unsplash.com/photo-1510146758428-e5e4b17b8b6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80' alt='team' />
       </Box>
       <Flex flexDirection='column' w='100%' maxW='1000px'>
-        <Heading fontWeight='bold' fontSize='3xl'>
+        <Heading fontWeight='bold' fontSize='6xl'>
           EIN BUNTES TEAM SAGT HALLO
         </Heading>
         <Text mb={4}>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.
         </Text>
         <NextLink href='/' passHref>
-          <Link as='a' color='pink.600'>Mehr erfahren</Link>
+          <Link as='a' color='accent.400' fontWeight='medium'>Mehr erfahren</Link>
         </NextLink>
       </Flex>
     </Flex>

@@ -13,6 +13,7 @@ const Footer = ({ children }) => {
         py={8}
         spacing={4}
         flexWrap='wrap'
+        fontFamily='mono'
 
       >
         <Box>
