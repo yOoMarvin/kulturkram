@@ -22,7 +22,7 @@ const Hero = styled(Box)`
 
 `
 
-export default function Home({ home, teasers }) {
+export default function Home ({ home, teasers }) {
   return (
     <>
       <Hero>
@@ -42,9 +42,9 @@ export default function Home({ home, teasers }) {
               flexDirection='column'
               alignItems='flex-start'
               maxW='700px'
-              mt={16}
+              mt={[4, 16]}
             >
-              <Heading color='black' fontWeight='900' fontSize='7xl' zIndex='1'>{home.data.hero}</Heading>
+              <Heading color='black' fontWeight='900' fontSize={['4xl', '5xl', '7xl']} zIndex='1'>{home.data.hero}</Heading>
               <Text color='black' fontSize='xl'>
                 {home.data.hero_description}
               </Text>
@@ -72,7 +72,7 @@ export default function Home({ home, teasers }) {
   )
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps (context) {
   const home = await client.getSingle('homepage')
   const teasers = await client.query(
     Prismic.Predicates.at('document.type', 'teaser'),

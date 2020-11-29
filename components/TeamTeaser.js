@@ -7,8 +7,8 @@ const TeamTeaser = (props) => {
       <Box w='100vw' mb={4} mt={4}>
         <Image src='/team.jpg' alt='team' />
       </Box>
-      <Flex flexDirection='column' w='100%' maxW='1000px'>
-        <Heading fontWeight='bold' fontSize='6xl'>
+      <Flex flexDirection='column' w='100%' maxW='1000px' px={4}>
+        <Heading fontWeight='bold' fontSize={['2xl', '4xl', '6xl']}>
           EIN BUNTES TEAM SAGT HALLO
         </Heading>
         <Text mb={4}>

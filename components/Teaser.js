@@ -3,8 +3,8 @@ const { Heading, Flex, Text, Box, Image, Link } = require('@chakra-ui/core')
 
 const Teaser = (props) => {
   return (
-    <Flex flexDirection='column' align={props.align} justifyContent='flex-start' mb={8} maxWidth='700px'>
-      <Heading fontWeight='bold' fontSize='6xl'>
+    <Flex flexDirection='column' align={props.align} justifyContent='flex-start' mb={8} maxWidth='500px'>
+      <Heading fontWeight='bold' fontSize={['2xl', '4xl', '6xl']}>
         {props.title}
       </Heading>
       <Text fontFamily='mono'>
