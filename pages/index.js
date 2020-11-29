@@ -71,7 +71,7 @@ export default function Home ({ home, teasers }) {
   )
 }
 
-export async function getServerSideProps () {
+export async function getStaticProps (context) {
   const home = await client.getSingle('homepage')
   const teasers = await client.query(
     Prismic.Predicates.at('document.type', 'teaser'),
